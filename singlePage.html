@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="container container-xs container-xr">
+        <div class="row">
+            <div class="col-xl-4 col-md-6 gx-5 gy-4 col-sm-12">
+                <div class="row h-100">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 g-3 guest">
+                        <!--Người Trả tiền-->
+                        <div class="row guest__wrapper pb-5">
+                            <div class="col-md-12 guest__header d-flex justify-content-between align-items-center">
+                                <h4 class="guest__title">PAYER</h4>
+                                <div class="guest__change py-2">Biến đổi</div>
+                            </div>
+                            <div class="col-md-12 guest__info d-flex align-items-center mt-4">
+                                <img src="./assets/img/guest.png" alt="" class="guest__info-photo">
+                                <div class="guest__account d-flex flex-column mx-4 flex-wrap">
+                                    <a href="" class="guest__name">Tien Toán</a>
+                                    <span class="guest__mail">tinhoang7901@gmail.com</span>
+                                </div>
+                                <div class="guest__action flex-fill d-flex justify-content-end">
+                                    <i class="ti-more-alt"></i>
+                                    <ul class="guest__action-menu">
+                                        <li class="action-menu__item">Edit</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 g-3 guest">
+                        <!--Khách-->
+                        <div class="row guest__wrapper pb-4">
+                            <div class="col-md-12 guest__header d-flex justify-content-between align-items-center">
+                                <h4 class="guest__title">GUESTS</h4>
+                                <div class="guest__change d-flex align-items-center">
+                                    <span class="guest__change-add-guest mx-3">Thêm khách</span>
+                                    <div class="guest__change-btn d-flex align-items-center">
+                                        <i class="ti-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-md-12 col-sm-12 guest__info d-flex align-items-center align-items-center mt-4">
+                                <img src="./assets/img/guest.png" alt="" class="guest__info-photo">
+                                <div class="guest__account d-flex flex-column mx-4">
+                                    <a href="" class="guest__name">Tien Toán</a>
+                                    <span class="guest__mail">tinhoang7901@gmail.com</span>
+                                </div>
+                                <div class="guest__action flex-fill d-flex justify-content-end">
+                                    <i class="ti-more-alt"></i>
+                                    <ul class="guest__action-menu">
+                                        <li class="action-menu__item">Edit</li>
+                                        <li class="action-menu__item">Add Visa Info</li>
+                                        <li class="action-menu__item">Move guest</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 g-3 door-lock">
+                        <!--Khóa Cửa-->
+                        <div class="row door-lock__wrapper pb-3">
+                            <div class="col-md-12 col-sm-12 door-lock__header d-flex align-items-center">
+                                <h4 class="door-lock__title me-2">
+                                    KHÓA CỬA
+                                </h4>
+                                <div class="door-lock__help d-flex align-items-center">
+                                    <i class="help-icon ti-help-alt"></i>
+                                    <div class="door-lock__help-info">
+                                        <span>
+                                            The Door Code is generated by the hotel. To send the Code to the guest,
+                                            click Send Door Code.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 door-lock__body flex-fill d-flex mt-4">
+                                <input type="text" placeholder="Nhập PIN của bạn"
+                                    class="door-lock__input-pin flex-lg-fill flex-md-fill flex-sm-fill me-3">
+                                <div
+                                    class="btn btn-send-doorCode flex-lg-grow-0 flex-md-fill flex-sm-fill px-lg-5 py-md-0 px-md-2">
+                                    Gửi mã cửa</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 gx-md-4 gx-sm-5 gy-4 col-sm-12 pe-13 px-15 mt-md-4 mt-sm-0 mt-ip-0">
+                <div class="row px-md-1 px-sm-0">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 g-3 stay-date">
+                        <!--Stay Date-->
+                        <div class="row stay-date__wrapper">
+                            <div
+                                class="col-md-12 col-sm-12 px-0 stay-date__header mt-0 d-flex justify-content-between align-items-center">
+                                <h4 class="stay-date__title">NGÀY LƯU TRÚ</h4>
+                                <div class="stay-date__room-number">Phòng: 1</div>
+                            </div>
+                            <div
+                                class="col-md-12 col-sm-12 gy-3 stay-date__check-in d-flex justify-content-between align-items-center py-4">
+                                <span class="check-in__title text-bold">Đăng ký vào</span>
+                                <a href="#" class="check-in__time">00:00</a>
+                                <a href="#" class="check-in__date">15-06-2022</a>
+                            </div>
+                            <div
+                                class="col-md-12 col-sm-12 g-4 stay-date__check-out d-flex justify-content-between align-items-center py-4">
+                                <span class="check-out__title text-bold">Thủ tục thanh toán</span>
+                                <a href="#" class="check-out__time">00:00</a>
+                                <a href="#" class="check-out__date">15-06-2022</a>
+                            </div>
+                            <div
+                                class="col-md-12 col-sm-12 g-4 stay-date__nights d-flex justify-content-between align-items-center py-4">
+                                <span class="stay-date__nights-title text-bold">Đêm</span>
+                                <span class="stay-date_nights-amount">1</span>
+                            </div>
+                            <div
+                                class="col-md-12 col-sm-12 g-4 stay-date__aside-content d-flex justify-content-between align-items-center py-4">
+                                <div>
+                                    <span class="text-bold">Nguồn: </span>
+                                    <span style="color: #000;font-size: 1.4rem;">Lễ Tân</span>
+                                </div>
+
+                                <span class="text-bold">Công Ty: -</span>
+                            </div>
+                            <div class="col-md-12 col-sm-12 g-4 stay-date__aside-content py-4">
+                                <span class="text-bold">Purpose of the visit: —</span>
+                            </div>
+                            <div class="col-md-12 col-sm-12 g-4 stay-date__aside-content py-4">
+                                <span class="text-bold">How did you find out: —</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 g-3 pin-code">
+                        <div class="row pin-code__wrapper">
+                            <div class="col-md-12 col-sm-12 g-4 mt-0 d-flex align-items-center">
+                                <h4 class="pin-code__title me-2">PIN CODE</h4>
+                                <div class="pin-code-help">
+                                    <i class="help-icon ti-help-alt"></i>
+                                    <p class="pin-code-help__content">
+                                        Guest might use this code to manage their reservation via HotelFriend Concierge
+                                        App
+                                    </p>
+                                </div>
+                                <h3 class="pin-code__text mx-3">6mp6</h3>
+                                <div class="btn btn-copy">Sao chép</div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 g-4 pin-code__content">
+                                <p style="color: #485B78;font-size:1.3rem;padding: 12px 0;">Share link to the Concierge
+                                    App:</p>
+                                <div class="pin-code__share-link mt-4 d-flex">
+                                    <a href="" class="btn btn-share-link me-2">With Reservation</a>
+                                    <a href="" class="btn btn-share-link">With Self Check-In</a>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 g-4">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-12 gx-5 gy-3 col-sm-12 mt-md-3 mt-sm-0">
+                <div class="row h-100">
+                    <div
+                        class="col-xl-12 col-lg-12 col-md-12 col-sm-12 gx-5 gy-4 balance flex-fill mt-xl-4 mt-lg-0 mt-md-0 mt-sm-3 mt-ip-0">
+                        <div class="row balance-wrapper">
+                            <div class="col-md-12 col-sm-12 balance-info">
+                                <h4 class="balance-info__title">THĂNG BẰNG</h4>
+                                <div class="balance-info__wrapper d-flex justify-content-between my-3 flex-wrap">
+                                    <div class="balance-info__amount flex-fill me-sm-0 me-ip">
+                                        <h4 class="balance-info__amount-title">Số lượng</h4>
+                                        <span class="balance-info__amount-number">€ 2.000,00</span>
+                                    </div>
+                                    <div class="balance-info__paid flex-fill mx-xl-3 mx-lg-3 mx-sm-3 mx-md-3 my-md-0">
+                                        <h4 class="balance-info__paid-title">Trả</h4>
+                                        <span class="balance-info__paid-number">0,00 €</span>
+                                    </div>
+                                    <div class="balance-info__balance flex-fill my-xxl-0 my-xl-3 my-lg-0 my-md-0 mt-ip">
+                                        <h4 class="balance-info__balance-title">Thăng Bằng</h4>
+                                        <span class="balance-info__balance-number">- €2,000.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 g-3 balance-include">
+                                <p class="balance-include__title text-bold">Bao gồm</p>
+                                <div class="balance-include__wrapper d-flex justify-content-between mt-3">
+                                    <div class="balance-include__info flex-fill d-flex justify-content-between me-3">
+                                        <span class="balance-include__info-title">Phí vệ sinh</span>
+                                        <span class="balance-include__info-number">0,00 €</span>
+                                    </div>
+                                    <div class="balance-include__info flex-fill d-flex justify-content-between">
+                                        <span class="balance-include__info-title">Thuế du lịch</span>
+                                        <span class="balance-include__info-number">0,00 €</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 g-3 balance-aside-content">
+                                <h4 class="balance-aside-content__title">PHƯƠNG THỨC THANH TOÁN ƯA THÍCH</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 gx-5 gy-3 comment flex-shrink-0">
+                        <div class="row comment-wrapper">
+                            <div
+                                class="col-md-12 col-sm-12 g-3 comment-action d-flex align-items-center justify-content-between">
+                                <h4 class="comment-action__title">NHẬN XÉT VÀ GHI CHÚ</h4>
+                                <div class="btn btn-comment">Tiết kiệm</div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 g-3 comment-info">
+                                <textarea name="comment" id="comment" cols="10" rows="6" class="comment-text-area"
+                                    placeholder="Thêm bình luận"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-xl-12 col-md-12 col-sm-12 acommodations">
+                <div class="row acommodations__wrapper gx-0">
+                    <div class="col-xl-12 col-md-12 col-sm-12 acommondations__header">
+                        <h4 class="acommondations__header-title">ACCOMMODATIONS</h4>
+                    </div>
+                    <div class="col-xl-12 col-md-12 col-sm-12 acommondations__table my-4">
+                        <table class="acommondations__table-info">
+                            <thead>
+                                <tr class="acommondations__table-info__header">
+                                    <td scope="col">Dates</td>
+                                    <td scope="col">Adults</td>
+                                    <td scope="col">Children</td>
+                                    <td scope="col">Room</td>
+                                    <td scope="col">Board</td>
+                                    <td scope="col">Room rate</td>
+                                    <td scope="col">Cancellation policy</td>
+                                    <td scope="col">Amount</td>
+                                    <td scope="col">City Tax</td>
+                                </tr>
+                            </thead>
+                            <tbody class="acommondations__table-info__body">
+                                <tr>
+                                    <td>15-06-2022 - 19-06-2022</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>DBL</td>
+                                    <td>13</td>
+                                    <td>No meals</td>
+                                    <td>Free cancellation policy</td>
+                                    <td>
+                                        <div class="edit-wrapper d-flex align-items-center">
+                                            <span class="me-2">€2,000.00</span>
+                                            <a href=""
+                                                class="edit-wrapper_btn d-flex align-items-center justify-content-center">
+                                                <i class="ti-pencil edit-wrapper_btn-icon"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="edit-wrapper d-flex align-items-center">
+                                            <span class="me-2">€0.00</span>
+                                            <a href=""
+                                                class="edit-wrapper_btn d-flex align-items-center justify-content-center">
+                                                <i class="ti-pencil edit-wrapper_btn-icon"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-xl-12 col-md-12 col-sm-12 acommondations__total d-flex justify-content-end">
+                        <div class="acommondations__total-title">
+                            Total:
+                            <span class="text-bold">€2,000.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-sm-12 orders">
+                <div class="row orders__wrapper gx-0">
+                    <div class="col-sm-12 orders__header d-flex justify-content-between align-items-center my-4">
+                        <h4 class="orders__header-title">ĐƠN HÀNG</h4>
+                        <div class="btn btn-order">
+                            Thêm đơn đặt hàng
+                            <i class="ti-plus ms-2"></i>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 orders__info">
+                        <div class="orders__info-empty d-flex flex-column justify-content-center align-items-center">
+                            <img src="./assets/img/order1.svg" alt="" class="orders__info-no-order">
+                            <p class="orders__info-no-order-message my-5">Không có đơn đặt hàng nào ở đây</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-sm-12 col-md-12 col-lg-6 orders pe-lg-2">
+                <div class="row orders__wrapper gx-0">
+                    <div class="col-sm-12 orders__header d-flex justify-content-between align-items-center my-4">
+                        <h4 class="orders__header-title">THANH TOÁN</h4>
+                        <div class="btn btn-order">
+                            Thêm thanh toán
+                            <i class="ti-plus ms-2"></i>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 orders__info">
+                        <div class="orders__info-empty d-flex flex-column justify-content-center align-items-center">
+                            <img src="./assets/img/card.svg" alt="" class="orders__info-no-order">
+                            <p class="orders__info-no-order-message my-5">Bạn chưa thêm bất kỳ khoản thanh toán nào</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 orders ps-lg-2 gy-md-3 gy-lg-0 my-sm-3 my-lg-0">
+                <div class="row orders__wrapper gx-0">
+                    <div class="col-sm-12 orders__header d-flex justify-content-between align-items-center my-4 flex-grow-0">
+                        <h4 class="orders__header-title">HÓA ĐƠN</h4>
+                        <div class="btn btn-order">
+                            Thêm hóa dơn
+                            <i class="ti-plus ms-2"></i>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 orders__info orders-list">
+                        <div class="orders__info-empty d-flex flex-column justify-content-center align-items-center" style="height: 400px;">
+                            <img src="./assets/img/guest_invoices.svg" alt="" class="orders__info-no-order">
+                            <p class="orders__info-no-order-message my-5">Bạn chưa tạo hóa đơn cho bất kỳ khách nào</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

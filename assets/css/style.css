@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f6f8fa;
+}
+::placeholder{
+    color: #AEBCCF;
+}
+
+.btn{
+    padding: 1rem 2.4rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.text-bold{
+    font-weight: 600 !important;
+    font-size: 1.3rem;
+    
+}
+
+/*Guest*/
+
+
+
+.guest__name{
+    color: #26ade4;
+    text-decoration: none;
+}
+
+.guest__mail,
+.guest__name,
+.guest__title,
+.door-lock__title,
+.stay-date__title,
+.pin-code__title,
+.balance-info__title,
+.balance-aside-content__title,
+.comment-action__title,
+.acommondations__header-title,
+.orders__header-title
+{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #8d8d8d;
+}
+.guest__info-photo {
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+.guest__mail{
+    color: #AEBCCF;
+}
+
+.guest,
+.door-lock,
+.stay-date,
+.pin-code,
+.balance,
+.comment,
+.acommodations__wrapper,
+.orders__wrapper{
+    border: 1px solid #e7ebf1;
+    border-radius: 2px;
+    background-color: #fff;
+    padding: 2.2rem;
+}
+
+
+
+.stay-date,
+.comment,
+.orders__wrapper{
+    padding-top: 1.8rem;
+}
+.balance{
+    padding-top: 2.5rem;
+}
+.guest__change{
+    color: #26ade4;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.guest__change-btn{
+    background-color: #26ade4;
+    border-radius: 2px;
+    border: 1px solid transparent;
+}
+
+.guest__change-btn > i{
+    color: #fff;
+    font-weight: 700;
+    padding: 0.8rem;
+}
+
+.guest__change-btn:hover{
+
+    background-color: #fff;
+    border: 1px solid #26ade4;
+    
+}
+.guest__change-btn:hover > i {
+    color: #26ade4;
+}
+
+.guest__action{
+    cursor: pointer;
+    position: relative;
+}
+
+.guest__action:hover .guest__action-menu{
+    display: block;
+}
+
+.guest__action-menu{
+    position: absolute;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 3px 3px 0 #e5e4e4;
+    top: 2rem;
+    display: none;
+    animation: actionItem linear .3s;
+}
+
+@keyframes actionItem {
+    from{
+        opacity: 0;
+        transform: translateY(-2rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.guest__action-menu::before{
+    position: absolute;
+    content: '';
+    width: 2.8rem;
+    height: 2rem;
+    right: 0;
+    top: -1rem;
+}
+
+.action-menu__item{
+    width: 18rem;
+    height: 2rem;
+    padding: 0.8rem 1.5rem;
+    box-sizing: initial;
+    font-size: 1.3rem;
+}
+
+.action-menu__item:hover{
+    background-color: #e7ebf1;
+}
+
+.guest__action > i {
+    font-size: 2rem;
+    color: #aebccf; 
+}
+
+
+.guest:first-child .guest__wrapper{
+    padding-bottom: 6rem !important;
+}
+.door-lock__title{
+    color: #8d8d8d;
+}
+.help-icon
+{
+    color: #26ade4;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.door-lock__input-pin{
+    border: 1px solid #e7ebf1;
+    padding: 1rem 0.8rem;
+    outline: none;
+}
+
+.door-lock__help{
+    position: relative;
+    cursor: pointer;
+}
+
+.door-lock__help-info{
+    position: absolute;
+    padding: 1.5rem;
+    width: 27rem;
+    height: 6rem;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    box-shadow: 0 3px 3px 0 #e5e4e4;
+    background-color: #fff;
+    box-sizing: unset;
+    top: 2.2rem;
+    left: -11rem;
+    animation: actionItem linear .3s;
+    box-sizing: unset;
+    display: none;
+}
+
+.door-lock__help:hover .door-lock__help-info{
+    display: block;
+}
+
+
+.btn-send-doorCode{
+    background-color: #fff;
+    border: 1px solid #26ade4;
+    color: #26ade4;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+/*Cot 2*/
+.stay-date__room-number{
+    background-color: #f6f7fb;
+    padding: 0.8rem 1.6rem;
+    border-radius: 2px;
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: 1px solid #e7ebf1;
+    box-shadow: 0 0 2px #f6f8fa;
+}
+
+
+.stay-date__check-in,
+.stay-date__check-out{
+    border-bottom: 1px solid #e7ebf1;
+}
+
+.stay-date__check-in,
+.stay-date__check-out,
+.stay-date__nights{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.check-in__title,
+.check-out__title{
+    width: 13rem;
+}
+.check-in__time,
+.check-out__time{
+    text-decoration: none;
+    color: #26ADE4;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.check-in__date,
+.check-out__date{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #51bde9;
+}
+.stay-date_nights-amount{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.stay-date__aside-content{
+    background-color: #f6f7fb;
+    border-radius: 2px;
+}
+
+.pin-code__text{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.btn-copy{
+    color: #26ADE4;
+    font-weight: 600;
+    border:  1px solid #e7ebf1;
+    border-radius: 2px;
+    padding: 6px 12px;
+}
+.btn-share-link{
+    text-decoration: none;
+    color: #485B78;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border:  1px solid #e7ebf1;
+    border-radius: 2px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.pin-code-help{
+    position: relative;
+}
+.pin-code-help__content{
+    position: absolute;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 3px 3px 0 #e5e4e4;
+    width: 27rem;
+    font-size: 1.3rem;
+    box-sizing: unset;
+    left: -10rem;
+    top: 2.6rem;
+    display: none;
+    animation: actionItem linear .3s;
+}
+.pin-code-help:hover .pin-code-help__content{
+    display: block;
+}
+
+/*Cot 3*/
+.balance-info__amount,
+.balance-info__paid,
+.balance-info__balance{
+    background-color: #f6f7fb;
+    padding: 0.8rem 1.6rem 0.8rem 0.8rem;
+    border-radius: 6px;
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: 1px solid #e7ebf1;
+}
+.balance-info__amount-title,
+.balance-info__paid-title,
+.balance-info__balance-title{
+   font-weight: 500;
+   font-size: 1.4rem; 
+   margin-bottom: .5rem;
+}
+
+.balance-info__amount-number,
+.balance-info__paid-number,
+.balance-info__balance-number{
+   font-size: 2rem; 
+}
+
+.balance-include__info-title{
+    font-weight: 400;
+}
+
+.balance-info__balance{
+    background-color: #f4fbf7;
+    border: 1px solid #66be85;
+}
+
+.balance-include__info{
+    background-color: #f6f7fb;
+    padding: 0.8rem 1.6rem 0.8rem 0.8rem;
+    border-radius: 6px;
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: 1px solid #e7ebf1;
+}
+.btn-comment{
+    background-color: #26ade4;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.comment-text-area{
+    width: 100%;
+    padding: 12px;
+    font-size: 1.6rem;
+    outline: none;
+    resize: none;
+    border-radius: 2px;
+    border: 1px solid #e7ebf1;
+}
+.comment-text-area:hover,
+.comment-text-area:focus{
+    border: 1px solid #26ade4;
+}
+
+.acommodations__wrapper{
+    background-color: #fff; 
+}
+
+/*Table Row 2*/
+
+.acommondations__table-info{
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: scroll;
+
+}
+
+.acommondations__table-info__header{
+    background-color: #f6f7fb;
+    
+}
+.acommondations__table-info__header > td{
+    font-size: 1.4rem;
+    padding: 12px;
+    color: #aebccf;
+    font-weight: 600;
+}
+.acommondations__table-info__body > tr > td{
+    font-size: 1.4rem;
+    padding: 1.6rem;
+    font-weight: 400;
+}
+.acommondations__table-info__body > tr{
+    border-bottom: 1px solid #e7ebf1;
+}
+.acommondations__total-title{
+    font-size: 1.4rem;
+}
+.edit-wrapper_btn{
+    background-color: #d3effa;
+    text-decoration: none;
+    color: #24afe8;
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    border-radius: 2px;
+}
+
+/* Order */
+.orders__info-no-order{
+    width: 100px;
+}
+
+.orders__info{
+    height: 25rem;
+}
+
+.orders__info-no-order-message{
+    color: #AEBCCF;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.btn-order{
+    color: #485B78;
+    border: 1px solid #e7ebf1;
+    font-size: 1.3rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    border-radius: 2px;
+    font-weight: 600;
+}
+.orders-list{
+    overflow-y: scroll;
+}
