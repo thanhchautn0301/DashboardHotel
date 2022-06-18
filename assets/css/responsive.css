@@ -11,4 +11,15 @@
     .mt-ip{
         margin-top: 1rem !important;
     }
+    .px-ip-2{
+        padding-right: 0.5rem !important;
+        padding-left: 0.5rem !important;
+    }
+    .flex-ip-fill{
+        flex: 1 1 auto !important;
+    }
+    .door-lock__body{
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
