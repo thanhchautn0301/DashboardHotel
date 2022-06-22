@@ -4,22 +4,59 @@
         overflow-x: scroll;
     }
 }
-@media screen and (min-width: 374px) and (max-width: 575px) {
+@media screen and (min-width: 374px) and (max-width: 599px) {
     .me-ip{
         margin-right: 1rem !important;
     }
     .mt-ip{
         margin-top: 1rem !important;
     }
+    .mt-ip-2{
+        margin-top: 1rem !important;
+    }
+
+    .mb-ip-4{
+        margin-bottom: 2rem !important;
+    }
+
     .px-ip-2{
         padding-right: 0.5rem !important;
         padding-left: 0.5rem !important;
     }
+
+    .pb-ip-0{
+        padding-bottom: 0 !important;
+    }
+
+    .pb-ip-3{
+        padding-bottom: 1rem !important;  
+    }
+
     .flex-ip-fill{
         flex: 1 1 auto !important;
     }
     .door-lock__body{
         padding-right: 0;
         padding-left: 0;
+    }
+}
+
+
+@media screen and (min-width: 374px) and (max-width: 1023px) {
+    .modal{
+        inset: 0;
+        width: 100%;
+    }
+    body{
+        scroll-behavior: smooth;
+    }
+    .body-overflow{
+        margin-right: 0 !important;
+    }
+}
+
+@media screen and (min-width: 1023px){
+    .body-overflow{
+        margin-right: 17px !important;
     }
 }
