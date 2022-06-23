@@ -256,6 +256,7 @@ html{
     color: #26ade4;
     border-radius: 2px;
     font-weight: 600;
+    text-align: center;
 }
 
 /*Cot 2*/
@@ -471,6 +472,8 @@ html{
     font-size: 1.3rem;
     font-weight: 600;
 }
+
+
 
 .comment-text-area{
     width: 100%;
@@ -952,6 +955,14 @@ html{
     border-radius: 0.2rem;
 }
 
+.send-link-input:hover,
+.send-link-input:focus{
+    border-color:  #24AFE8;
+}
+
+
+
+
 .btn-sendLink{
     background-color: #26ADE4;
     font-size: 1.3rem;
@@ -964,4 +975,49 @@ html{
 .send-link__description{
     color: rgba(72, 91, 120, 0.7);
     font-size: 1.4rem;
+}
+
+.select-cs{
+    width: 100%;
+    border: 1px solid #e7ebf1;
+    border-radius: 2px;
+    padding: 0.8rem;
+    font-size: 1.4rem;
+    outline: none;
+    font-weight: 300;
+}
+
+.select-cs__item{
+    background-color: #fff;
+    padding: 0.8rem !important;
+    color: #50627e;
+    font-size: 1.4rem;
+}
+.send-link-input.form-fill-input--danger{
+    border-color: #ea6565;
+}
+
+.input-text-group{
+    position: relative;
+}
+.input-text-group  > .send-link-input{
+    position: absolute;
+}
+
+.input-text-group > span{
+    position: absolute;
+    font-size: 1.4rem;
+    right: 0;
+    top: 50%;
+    padding: 1.2rem;
+}
+
+.text-area-cs{
+    width: 100%;
+    padding: 12px;
+    font-size: 1.6rem;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid #e7ebf1;
+    resize: vertical;
 }

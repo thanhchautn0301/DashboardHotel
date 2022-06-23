@@ -485,10 +485,10 @@
                 class="col-sm-12 orders__header d-flex justify-content-between align-items-center my-4"
               >
                 <h4 class="orders__header-title">THANH TOÁN</h4>
-                <div class="btn btn-order">
+                <label for="add-payment" class="btn btn-order" onclick="checkModal()">
                   Thêm thanh toán
                   <i class="ti-plus ms-2"></i>
-                </div>
+                </label>
               </div>
               <div class="col-sm-12 orders__info">
                 <div
@@ -1399,6 +1399,129 @@
         </div>
         <!--End of Modal -->
       </div>
+
+      <div class="modal-5">
+        <!--Modal  -->
+        <input
+          type="checkbox"
+          class="modal-checkbox"
+          id="add-payment"
+          hidden
+        />
+  
+        <label for="add-payment" class="modal__overlay"></label>
+  
+        <div
+          class="modal guest-modal__3 d-flex flex-column justify-content-between"
+        >
+          <div class="container modal-wrapper">
+            <div class="row modal__content px-lg-5">
+              <div class="col-sm-12">
+                <div class="row">
+                  <div
+                    class="col-sm-12 modal__content-header d-flex justify-content-center"
+                  >
+                    <h4 class="modal__content-header__title flex-fill">
+                        Gửi liên kết để tự đăng ký
+                    </h4>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 payment-method gy-4">
+                    <p class="reservation-title text-bold my-3">Phương thức thanh toán</p>
+                    <select name="" id="" class="select-cs">
+                      <option class="select-cs__item" value="">Cash</option>
+                      <option class="select-cs__item" value="">Visa</option>
+                      <option class="select-cs__item" value="">Master Card</option>
+                      <option class="select-cs__item" value="">American Express</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-12 send-link gy-3">
+                    <p class="reservation-title text-bold my-3">Tổng</p>
+                      <div class="input-text-group">
+                        <input
+                          type="text"
+                          class="send-link-input form-fill-input--danger"
+                          placeholder="0.00"
+                        />
+                        <span class="d-flex align-items-center">€</span>
+                      </div>       
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 mt-5">
+                    <div class="form-fill-danger mt-4">
+                      Tên không được để trống.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-12 gy-3">
+                    <p class="reservation-title text-bold my-3">VAT</p>
+                    <div
+                            class="accommodation___check-time d-flex mt-3 align-items-center"
+                          >
+                            <p
+                              class="accommodation__check-time__selected flex-fill"
+                            >
+                             Không có VAT (0%)
+                            </p>
+                            <i class="ti-angle-down"></i>
+                          </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-12 gy-2">
+                    <p class="reservation-title text-bold my-3">Bình luận</p>
+                    <textarea name="" class="text-area-cs" id="" cols="30" rows="2">
+
+                    </textarea>
+                  </div>
+
+
+                </div>
+
+                <div class="row">
+
+                  <div class="col-sm-12 gy-2">
+                    <p class="reservation-title text-bold my-3">Chủ tài khoản / Tên trên thẻ</p>
+                    <textarea name="" class="text-area-cs" id="" cols="30" rows="2">
+
+                    </textarea>
+                  </div>
+
+
+                </div>
+                <div class="row">
+
+                  <div class="col-sm-12 gy-2 pb-4">
+                    <p class="reservation-title text-bold my-3">Bốn chữ số cuối của tài khoản</p>
+                    <textarea name="" class="text-area-cs" id="" cols="30" rows="2">
+
+                    </textarea>
+                  </div>
+
+
+                </div>
+            </div>
+          </div>
+          <div
+            class="user-action d-flex justify-content-center align-items-center"
+          >
+            <label for="add-payment" class="btn btn-cancel">Huỷ Bỏ</label>
+            <a class="btn btn-save">Biến Đổi</a>
+          </div>
+        </div>
+        <!--End of Modal -->
+      </div>
+
+
+    
 
     <script src="./assets/js/modalOpen.js"></script>
     <script src="./assets/js/actionField.js"></script>
